@@ -1,0 +1,359 @@
+body {
+    background-color: lightsteelblue;
+    margin: 0;
+    font-family: system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans","Liberation Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+}
+
+* {
+    font-family: system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans","Liberation Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+
+}
+
+#page-content {
+    display: flex;
+    justify-content: center;
+}
+
+.nav-bar {
+    align-items: center;
+    background-color: darkblue;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.brand {
+    align-items: center;
+    color: orange;
+    display: flex;
+    font-size: x-large;
+}
+
+.auth {
+    margin-right: 16px;
+}
+
+.orange-button {
+    background-color: sandybrown;
+    border: 4px transparent;
+    border-radius: 0.25rem;
+    color: darkblue;
+    padding: 12px 16px;
+}
+
+#start-button{
+  margin-top: 16px;
+  padding: 16px 100px;
+}
+.radiodiv{
+  display: flex;
+  flex-direction: row;
+}
+
+button:hover {
+    color:darkslateblue;
+    cursor: pointer;
+}
+
+.orange-button:active {
+    background-color: wheat;
+    color: darkblue;
+}
+
+#buttons-div {
+    display: flex;
+    justify-content: space-between;
+    padding: 8px;
+}
+
+.home-buttons {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.game-button {
+    border: 0;
+    line-height: 2.5;
+    padding: 0 20px;
+    font-size: 1rem;
+    text-align: center;
+    color: #fff;
+    text-shadow: 1px 1px 1px #000;
+    border-radius: 10px;
+    background-color: rgba(220, 0, 0, 1);
+    background-image: linear-gradient(to top left,
+                                      rgba(0, 0, 0, .2),
+                                      rgba(0, 0, 0, .2) 30%,
+                                      rgba(0, 0, 0, 0));
+    box-shadow: inset 2px 2px 3px rgba(255, 255, 255, .6),
+                inset -2px -2px 3px rgba(0, 0, 0, .6);
+}
+
+.game-button:hover {
+    background-color: rgba(255, 0, 0, 1);
+}
+
+.game-button:active {
+    box-shadow: inset -2px -2px 3px rgba(255, 255, 255, .6),
+                inset 2px 2px 3px rgba(0, 0, 0, .6);
+}
+
+#back-drop {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 10;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+#initial-page {
+    text-align: center;
+    width: 50%;
+    color: navy;
+}
+
+#initial-brand-name {
+    color: sandybrown;
+    background-color: darkblue;
+    padding: 4px 8px;
+    border-radius: 15px;
+}
+
+.initial-button {
+    background-color: rgba(0, 0, 0, 0.1);
+    border: 2px solid darkblue;
+    border-radius: 0.25rem;
+    padding: 12px 16px;
+}
+
+.initial-button:active {
+    background-color: wheat;
+    color: darkblue;
+}
+
+.rules-p {
+    text-align: center;
+    font-size: x-large;
+    color: tomato;
+    margin-top: 40px;
+}
+
+.mt-16 {
+    margin-top: 16px;
+}
+
+.radio-label{
+  font-size: medium;
+  color: maroon;
+}
+
+#rules {
+    display: block;
+    color: darkslateblue;
+    font-size: medium;
+    text-align: left;
+}
+
+.dialog {
+    background-color: gainsboro;
+    border: 1px solid black;
+    border-radius: 0.25rem;
+    z-index: 100;
+    text-align: center;
+    padding: 16px;
+    margin: auto;
+    margin-top: 30px
+}
+
+#rules-dialog {
+    width: 30%;
+    color: maroon;
+}
+
+.ranking-dialog {
+    width: 30%;
+    color: maroon;
+    min-height: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#leave-dialog {
+    margin-top: 300px;
+    min-height: 64px;
+    max-width: 30%;
+    font-size: larger;
+    display: block;
+}
+
+#auth-dialog {
+    width: 20%;
+    color: maroon;
+    min-height: 250px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.dialog-form {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 16px;
+    margin-top: 16px;
+    text-align: center;
+}
+
+#settings-dialog {
+    color: maroon;
+    width: 25%;
+}
+
+.settings-div {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    margin-top: 8px;
+}
+
+.mb-0 {
+    margin-bottom: 0px;
+}
+
+.leave-button {
+    padding: 8px;
+    margin-top: 8px;
+}
+
+#error-message {
+    color:red;
+    font-size: medium;
+    text-align: center;
+
+}
+
+#game-area {
+    background-color: #803300;
+    display: inline-block;
+    margin-top: 8px;
+}
+
+#score-board {
+    display: flex;
+    justify-content: space-between;
+    margin: 8px 8px 0px;
+    border-top: 2px solid white;
+    background-color: black;
+    color: white;
+}
+
+.score-column {
+    width: 150px;
+    border-left: 2px solid white;
+    border-right: 2px solid white;
+}
+
+.name-display {
+    border-bottom: 2px solid white;
+    text-align: center;
+    padding: 2px;
+}
+
+.score-display {
+    border-color: black;
+    border-style: solid;
+    border-width: 0px 1px;
+    text-align: center;
+    padding: 2px;
+}
+
+#message-panel {
+    background-color: black;
+    border: 2px solid white;
+    color: white;
+    font-size: x-large;
+    text-align: center;
+    padding: 4px;
+    margin: 0px 8px 8px;
+}
+
+#game-board {
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+    padding: 12px;
+}
+
+.bank {
+    height: 192px;
+    width: 84px;
+    margin: 8px 12px;
+    border-radius: 44%;
+    background-color: sandybrown;
+    border: 4px inset gainsboro
+}
+
+.house {
+    margin-top: 8px;
+    margin-bottom: 8px;
+    margin-left: 8px;
+    margin-right: 8px;
+    width: 84px;
+    height: 84px;
+    border-radius: 30%;
+    background-color: sandybrown;
+    border: 4px inset gainsboro;
+    box-shadow: inset 5px 5px rgba(0,0,0,0.3);
+}
+
+#houses-div {
+    display: flex;
+    flex-wrap: wrap-reverse;
+}
+
+#canvas {
+    position: absolute;
+    pointer-events: none;
+}
+
+#name-display {
+    color: sandybrown;
+    font-size: larger;
+    margin-right: 8px;
+}
+
+.authInput {
+    margin-bottom: 4px;
+}
+
+.form-label {
+    color:darkblue;
+    font-size: medium;
+}
+
+.clickable {
+    cursor: pointer;
+    border-color: #8b8bfc;
+}
+
+.clickable:hover {
+    cursor: pointer;
+    border-color: blue;
+}
+
+table {
+    background-color: azure;
+    border-collapse: collapse;
+}
+
+table, td, th {
+    padding: 8px;
+    border: 1px solid maroon;
+}
+
+.hidden {
+    display: none !important;
+}
